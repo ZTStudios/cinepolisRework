@@ -65,3 +65,35 @@ body {
   width: 100px;
   border-radius: 20px;
 }
+.cardComida{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+.cardComida__container{
+  border: 1px solid #242424;
+  border-radius: 25px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cardComida__container-title{
+  color: rgb(109, 109, 21);
+  font-size: 16px;
+  align-self: flex-start;
+
+}
+.cardComida__container-Comida{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardComida__container-Comida-emojis{
+  font-size: 30px;
+
+}
