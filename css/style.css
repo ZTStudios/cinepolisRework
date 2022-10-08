@@ -68,10 +68,11 @@ body {
 .cardComida{
   width: 90%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
-
+  overflow: scroll;
+  
 }
 .cardComida__container{
   border: 1px solid #242424;
