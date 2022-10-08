@@ -1,23 +1,8 @@
 import '../css/style.css';
 import javascriptLogo from '../public/javascript.svg'
 import { setupCounter } from './counter'
+import Card from "./components/cardMovie.js"
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+document.querySelector('#app').appendChild(Card("Estrenos","https://ver.cuevana.pro/resize/200/storage/52637/Yia0FAkvqOBMpvi83TtKxbHTM2ZDnnajBUvH3RRz.jpg","https://ver.cuevana.pro/resize/200/storage/54198/WWn29ij6eEbhrgYsJcv6nehNoI4H9Zb0Zx7suhhz.jpg","https://ver.cuevana.pro/resize/200/storage/54212/iyqPgWDBPXyu43p3X3XSxRVJXBQLQ0j8ZRouSH2o.jpg"))
+document.querySelector('#app').appendChild(Card("Preventa"))
 
-setupCounter(document.querySelector('#counter'))
