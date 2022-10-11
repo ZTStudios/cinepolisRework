@@ -1,21 +1,21 @@
 
-const Card = (title, img1,img2,img3) =>{
+const Card = (title, array) =>{
   const $div = document.createElement("div")
   $div.className = "card"
   $div.innerHTML=`
     <h2 class="card__title">${title}</h2>
-    <div class="card__movies">
-      <div class="card__movies-container">
-        <img src="${img1}" class="card__movies-container-img">
-      </div>
-      <div class="card__movies-container">
-        <img src="${img2}" class="card__movies-container-img">
-      </div>
-      <div class="card__movies-container">
-        <img src="${img3}" class="card__movies-container-img">
-      </div>
-    </div>
   `
+  const $divMovies = document.createElement("div")
+  $divMovies.className = "card__movies"
+  for (const url of array) {
+    const $divImagen= document.createElement("div")
+    $divImagen.className = "card__movies-container"
+    $divImagen.innerHTML = `
+      <img src="${url}" class="card__movies-container-img">
+    `
+    $divMovies.appendChild($divImagen)
+  }
+  $div.appendChild($divMovies)
   return $div;
 }
 
