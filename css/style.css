@@ -12,17 +12,6 @@
   --white: #ffffff;
 }
 
-.contenedor{
-  background-color: blue;
-  width: 500px;
-  height: 500px;
-}
-#app{
-  width: 800px;
-  height: 800;
-  background-color: black;
-}
-
 .header {
   min-width: 360px;
   height: 60vh;

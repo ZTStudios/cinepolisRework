@@ -1,7 +1,8 @@
 const Header = () => {
   const $header = document.createElement("header");
   $header.className = "header";
-  $header.innerHTML = `<nav class="header_navbar">
+  $header.innerHTML = `
+        <nav class="header_navbar">
         <div class="navbar-menu_container"><i class="bx bx-menu"></i></div>
         <div class="navbar-menu_logo">
           <img
@@ -30,7 +31,7 @@ const Header = () => {
       </div>
       <div class="header_footer">
         <div class="header-footer_trailer">
-          <img src="resources/Vector.png" alt="" />
+          <img src="resources/video-icon.png" alt="" />
           Ver trailer
         </div>
         <div class="header-footer_horarios">
@@ -42,7 +43,7 @@ const Header = () => {
         </div>
       </div>
   `;
-
+  return $header;
 };
 
 export default Header;
